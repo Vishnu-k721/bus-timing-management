@@ -1,0 +1,883 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+
+    	<title>Bus Timing Find</title>
+    
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="apple-touch-icon" href="apple-touch-icon.png">
+
+        <link rel="stylesheet" href="css/bootstrap.min.css">
+        <link rel="stylesheet" href="css/bootstrap-theme.min.css">
+        <link rel="stylesheet" href="css/fontAwesome.css">
+        <link rel="stylesheet" href="css/hero-slider.css">
+        <link rel="stylesheet" href="css/owl-carousel.css">
+        <link rel="stylesheet" href="css/datepicker.css">
+        <link rel="stylesheet" href="css/tooplate-style.css">
+        
+
+        <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700,800" rel="stylesheet">
+
+        <script src="js/vendor/modernizr-2.8.3-respond-1.4.2.min.js"></script>
+    </head>
+
+<body>
+
+    
+    <section class="banner" id="top">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-5">
+                    <div class="left-side">
+                        <div class="logo">
+                            <img src="logo02.png" alt="Flight Template">
+                        </div>
+                        <div class="page-direction-button">
+                            <a href="contact.html"><i class=""></i>Write us</a><br><br>
+                            <a href="HOD.html"><i class=""></i>Our Guide</a><br><br>
+                            <a href="index.html"><i class=""></i>Log Out</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-5 col-md-offset-1">
+                    <section id="first-tab-group" class="tabgroup">
+                        <div id="tab1"> 
+                            <div class="submit-form">
+                                <h4>SEARCH <em>BUS NOW</em></h4>
+                                <form id="form-submit" action="tableneli.htmls" method="get">
+                                    <div class="row">
+                                        <div class="col-md-6">
+                                            <fieldset>
+                                                <label for="from">From:</label>
+                                                <select required name='from' onchange="ddlSelect();">
+                                                    <option value="Cuddalore">Cuddalore</option>
+                                                </select>
+                                            </fieldset>
+                                        </div>
+                                        <div class="col-md-6">
+                                            <fieldset>
+                                                <label for="to">To:</label>
+                                                <select required name='to' onchange="ddlSelect();">
+                                                    <option value="">Select a location...</option>
+                                                    <option value="Nellikuppam">Nellikuppam</option>
+                                                    <option value="Naduverapattu">Naduverapattu</option>
+                                                    <option value="Puduchery">Puduchery</option>
+                                                    <option value="Pattampakkam">Pattampakkam</option>
+                                                    <option value="Panruti">Panruti</option>
+                                                    <option value="Bangalore">Bangalore</option>
+                                                    <option value="Neyveli TS">Neyveli TS</option>
+                                                    <option value="Palani">Palani</option>
+                                                    <option value="SRIMUSHNAM">SRIMUSHNAM</option>
+                                                    <option value="TINDIVANAM">TINDIVANAM</option>
+                                                    <option value="Villupram">Villupram</option>
+                                                    <option value="POOMBUKAR">POOMBUKAR</option>
+                                                    <option value="Chidhambaram">Chidhambaram</option>
+                                                    <option value="TIRUPATHY">TIRUPATHY</option>
+                                                    <option value="Sirkazi">Sirkazi</option>
+                                                    <option value="Madurai">Madurai</option>
+                                                    <option value="VELANKANNI">VELANKANNI</option>
+                                                    <option value="Ariyalur">Ariyalur</option>
+                                                    <option value="Chengalpattu">Chengalpattu</option>
+                                                    <option value="Chennai">Chennai</option>
+                                                    <option value="Coimbatore">Coimbatore</option>
+                                                    <option value="Dharmapuri">Dharmapuri</option>
+                                                    <option value="Dindigul">Dindigul</option>
+                                                    <option value="Erode">Erode</option>
+                                                    <option value="Kallakurichi">Kallakurichi</option>
+                                                    <option value="Kancheepuram">Kancheepuram</option>
+                                                    <option value="Karur">Karur</option>
+                                                    <option value="Krishnagiri">Krishnagiri</option>
+                                                    <option value="Mayiladuthurai">Mayiladuthurai</option>
+                                                    <option value="Nagapattinam">Nagapattinam</option>
+                                                    <option value="Kanniyakumari">Kanniyakumari</option>
+                                                    <option value="Namakkal">Namakkal</option>
+                                                    <option value="Perambalur">Perambalur</option>
+                                                    <option value="Pudukottai">Pudukottai</option>
+                                                    <option value="Ramanathapuram">Ramanathapuram</option>
+                                                    <option value="Ranipet">Ranipet</option>
+                                                    <option value="Salem">Salem</option>
+                                                    <option value="Sivagangai">Sivagangai</option>
+                                                    <option value="Tenkasi">Tenkasi</option>
+                                                    <option value="Thanjavur">Thanjavur</option>
+                                                    <option value="Theni">Theni</option>
+                                                    <option value="Thiruvarur">Thiruvarur</option>
+                                                    <option value="Thoothukudi">Thoothukudi</option>
+                                                    <option value="Trichirappalli">Trichirappalli</option>
+                                                    <option value="Thirunelveli">Thirunelveli</option>
+                                                    <option value="Tiruvannamalai">Tiruvannamalai</option>
+                                                    <option value="Vellore">Vellore</option>
+                                                </select>
+                                            </fieldset>
+                                        </div>
+                                        
+                                        <div class="col-md-6">
+                                            <fieldset>
+                                                <label for="departure">Departure date:</label>
+                                                <input name="deparure" type="text" class="form-control date" id="deparure" placeholder="Select date..." required="" onchange=''>
+                                            </fieldset>
+                                        </div>
+                                        <div class="col-md-6">
+                                            <div class="radio-select">
+                                                <div class="row">
+                                                    <div class="col-md-6 col-sm-6 col-xs-6">
+                                                        <label for="round">Round</label>
+                                                        <input type="radio" name="trip" id="round" value="round" required="required"onchange='this.form.()'>
+                                                    </div>  
+                                                    <div class="col-md-6 col-sm-6 col-xs-6">
+                                                        <label for="oneway">Oneway</label>
+                                                        <input type="radio" name="trip" id="oneway" value="one-way" required="required"onchange='this.form.()'>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-6">
+                                            <fieldset>
+                                                <button type="submit" id="form-submit" class="btn">Search Buses</button>
+                                            </fieldset>
+                                        </div>
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+                    </section>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section>
+         <div class="container">
+            <div class="time-heading">
+            <h1>Time and Date</h1>
+           </div>
+            <div class="display-date">
+              <span id="day">day</span>,
+              <span id="daynum">00</span>
+              <span id="month">month</span>
+              <span id="year">0000</span>
+            </div>
+            <div class="display-time"></div>
+          </div>
+          <script>const displayTime = document.querySelector(".display-time");
+            // Time
+            function showTime() {
+              let time = new Date();
+              displayTime.innerText = time.toLocaleTimeString("en-US", { hour12: true });
+              setTimeout(showTime, 1000);
+            }
+            
+            showTime();
+            
+            // Date
+            function updateDate() {
+              let today = new Date();
+            
+              // return number
+              let dayName = today.getDay(),
+                dayNum = today.getDate(),
+                month = today.getMonth(),
+                year = today.getFullYear();
+            
+              const months = [
+                "January",
+                "February",
+                "March",
+                "April",
+                "May",
+                "June",
+                "July",
+                "August",
+                "September",
+                "October",
+                "November",
+                "December",
+              ];
+              const dayWeek = [
+                "Sunday",
+                "Monday",
+                "Tuesday",
+                "Wednesday",
+                "Thursday",
+                "Friday",
+                "Saturday",
+              ];
+              // value -> ID of the html element
+              const IDCollection = ["day", "daynum", "month", "year"];
+              // return value array with number as a index
+              const val = [dayWeek[dayName], dayNum, months[month], year];
+              for (let i = 0; i < IDCollection.length; i++) {
+                document.getElementById(IDCollection[i]).firstChild.nodeValue = val[i];
+              }
+            }
+            
+            updateDate();
+            </script>
+            </section>
+    <section id="most-visited">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="section-heading">
+                        <h2>Most Visited Places</h2>
+                    </div>
+                </div>
+                <div class="col-md-12">
+                    <div id="owl-mostvisited" class="owl-carousel owl-theme">
+                        <div class="item col-md-12">
+                            <div class="visited-item">
+                                <img src="temp.jpg" alt="">
+                                <div class="text-content">
+                                    <h4>Meenachi amman temple</h4>
+                                    <span> Madurai</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="item col-md-12">
+                            <div class="visited-item">
+                                <img src="temp2.jpg" alt="">
+                                <div class="text-content">
+                                    <h4>Brihadisvara Temple</h4>
+                                    <span> Thanjavur</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="item col-md-12">
+                            <div class="visited-item">
+                                <img src="marina.jpg" alt="">
+                                <div class="text-content">
+                                    <h4>Marina Beach</h4>
+                                    <span>Chennai</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="item col-md-12">
+                            <div class="visited-item">
+                                <img src="ish.jpg" alt="">
+                                <div class="text-content">
+                                    <h4>Isha</h4>
+                                    <span>Coimbatore</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="item col-md-12">
+                            <div class="visited-item">
+                                <img src="Hogenakkal.webp" alt="">
+                                <div class="text-content">
+                                    <h4>Gorgeous Waterfalls</h4>
+                                    <span>Hogenakkal</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="item col-md-12">
+                            <div class="visited-item">
+                                <img src="Ooty.webp" alt="">
+                                <div class="text-content">
+                                    <h4>Queen Of Hill Stations</h4>
+                                    <span>Ooty</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="item col-md-12">
+                            <div class="visited-item">
+                                <img src="kodai.webp" alt="">
+                                <div class="text-content">
+                                    <h4>Breathtaking Natural Beauty</h4>
+                                    <span>Kodaikanal</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="item col-md-12">
+                            <div class="visited-item">
+                                <img src="palani.webp" alt="">
+                                <div class="text-content">
+                                    <h4>Murugar temple</h4>
+                                    <span>Palani</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="item col-md-12">
+                            <div class="visited-item">
+                                <img src="jesus.jpg" alt="">
+                                <div class="text-content">
+                                    <h4>Church</h4>
+                                    <span>VELANKANNI</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="item col-md-12">
+                            <div class="visited-item">
+                                <img src="img/point.jpg" alt="">
+                                <div class="text-content">
+                                    <h4>Hair pin bends</h4>
+                                    <span>KOLLI HILLS</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="item col-md-12">
+                            <div class="visited-item">
+                                <img src="img/YER.jpg" alt="">
+                                <div class="text-content">
+                                    <h4>Kiliyur Falls</h4>
+                                    <span>YERCAUD</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="item col-md-12">
+                            <div class="visited-item">
+                                <img src="img/THIRU.webp" alt="">
+                                <div class="text-content">
+                                    <h4>Thiruvalluvar Statue</h4>
+                                    <span>kanniyakumari</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="item col-md-12">
+                            <div class="visited-item">
+                                <img src="img/GOD.jpg" alt="">
+                                <div class="text-content">
+                                    <h4>Padaleeswarar temple</h4>
+                                    <span>CUDDALORE</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="item col-md-12">
+                            <div class="visited-item">
+                                <img src="img/DEV.jpg" alt="">
+                                <div class="text-content">
+                                    <h4>Devanathaswamy temple</h4>
+                                    <span>CUDDALORE</span>
+                                </div>
+                            </div>
+                        </div>  
+                        <div class="item col-md-12">
+                            <div class="visited-item">
+                                <img src="img/PICHA.jpg" alt="">
+                                <div class="text-content">
+                                    <h4>Pichavaram Mangrove Forest</h4>
+                                    <span>Chidhambaram</span>
+                                </div>
+                            </div>
+                        </div>  
+                        <div class="item col-md-12">
+                            <div class="visited-item">
+                                <img src="img/SIVA.jpg" alt="">
+                                <div class="text-content">
+                                    <h4>Arunachaleshwar Temple</h4>
+                                    <span>Tiruvannamalai</span>
+                                </div>
+                            </div>
+                        </div>  
+                        <div class="item col-md-12">
+                            <div class="visited-item">
+                                <img src="img/AURO.jpg" alt="">
+                                <div class="text-content">
+                                    <h4>Auroville</h4>
+                                    <span>Puducherry</span>
+                                </div>
+                            </div>
+                        </div>  
+                        <div class="item col-md-12">
+                            <div class="visited-item">
+                                <img src="img/mon.jpg" alt="">
+                                <div class="text-content">
+                                    <h4>Monkey Falls</h4>
+                                    <span>Coimbatore</span>
+                                </div>
+                            </div>
+                        </div>  
+                        <div class="item col-md-12">
+                            <div class="visited-item">
+                                <img src="sj.jpg" alt="">
+                                <div class="text-content">
+                                    <h4>Fort Mosque</h4>
+                                    <span>Vellore</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <div class="tabs-content" id="recommended-hotel">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="section-heading">
+                        <h2>Best View Places</h2>
+                    </div>
+                </div>
+                <div class="wrapper">
+                    <div class="col-md-4">
+                            <ul class="tabs clearfix" data-tabgroup="third-tab-group">
+                                <li><a href="#livingroom" class="active">Best Destinations <i class="fa fa-angle-right"></i></a></li>
+                                <li><a href="#suitroom"class="active">Brihadisvara Temple<i class="fa fa-angle-right"></i></a></li>
+                                <li><a href="#swimingpool"class="active">Hogenakkal Falls<i class="fa fa-angle-right"></i></a></li>
+                                <li><a href="#massage"class="active">Most Attractive places<i class="fa fa-angle-right"></i></a></li>
+                                <li><a href="#fitness"class="active">Thiruvalluvar Statue <i class="fa fa-angle-right"></i></a></li>
+                                <li><a href="#event"class="active">Tanjore Doll<i class="fa fa-angle-right"></i></a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-md-8">
+                        <section id="third-tab-group" class="recommendedgroup">
+                            <div id="livingroom">
+                                <div class="text-content">
+                                    <iframe width="100%" height="400px" src="C:\project\video\Best_Travel_Destinations_in_Tamil_Nadu___Must_visit_places_in_Tamil_Nadu_-_TAMIL_NADU_TOURISM(1080p).mp4">
+                                    </iframe>
+                                </div>
+                            </div>
+                            <div id="suitroom">
+                                <div class="row">
+                                    <div class="col-md-12">
+                                        <div id="owl-suiteroom" class="owl-carousel owl-theme">
+                                            <iframe width="100%" height="400px" src="C:\project\video\1000_year_old_Brihadisvara_temple_Gangaikonda_Cholapuram_Aerial_view(4K).webm">
+                                            </iframe>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div id="swimingpool">
+                                <div class="row">
+                                    <div class="col-md-12">
+                                        <div class="text-content">
+                                            <iframe width="100%" height="400px" src="C:\project\video\Hogenakkal_Falls____Cinematic____Drone_Video____Aerial_View(1080p).mp4">
+                                            </iframe>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div id="massage">
+                                <div class="row">
+                                    <div class="col-md-12">
+                                        <div class="text-content">
+                                            <iframe width="100%" height="400px" src="C:\project\video\Most_Attractive_places_of_Tamil_Nadu___Holiday_Getaway_Spots_-_TAMIL_NADU_TOURISM(1080p60).mp4">
+                                            </iframe>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div id="fitness">
+                              <div class="row">
+                                    <div class="col-md-12">
+                                        <div class="text-content">
+                                            <iframe width="100%" height="400px" src="C:\project\video\Places_to_Visit_in_Kanyakumari___Thiruvalluvar_Statue___Vivekananda_Memorial_-_TAMIL_NADU_TOURISM(2160p).webm">
+                                            </iframe>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div id="event">
+                                <div class="row">
+                                    <div class="col-md-12">
+                                        <div class="text-content">
+                                            <iframe width="100%" height="400px" src="C:\project\video\Making_of_Thanjavur_Thalaiyatti_Bommai___GI_Tags___Art___crafts_of_Thanjavur_-_TAMIL_NADU_TOURISM(2160p).webm">
+                                            </iframe>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </section>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+
+
+    <div class="tabs-content" id="weather">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="section-heading">
+                        <h2>Check Weather For 5 NEXT Days</h2>
+                    </div>
+                </div>
+                <div class="wrapper">
+                    <div class="col-md-12">
+                        <div class="weather-content">
+                            <div class="row">
+                                <div class="col-md-12">
+                                    <ul class="tabs clearfix" data-tabgroup="second-tab-group">
+                                        <li><a href="#monday" class="active">Monday</a></li>
+                                        <li><a href="#tuesday">Tuesday</a></li>
+                                        <li><a href="#wednesday">Wednesday</a></li>
+                                        <li><a href="#thursday">Thursday</a></li>
+                                        <li><a href="#friday">Friday</a></li>
+                                    </ul>    
+                                </div>
+                                <div class="col-md-12">
+                                    <section id="second-tab-group" class="weathergroup">
+                                        <div id="monday">
+                                            <div class="row">
+                                                <div class="col-md-4">
+                                                    <div class="weather-item">
+                                                        <h6>Chennai</h6>
+                                                        <div class="weather-icon">
+                                                            <img src="img/weather-icon-03.png" alt="">
+                                                        </div>
+                                                        <span>32&deg;C</span>
+                                                        <ul class="time-weather">
+                                                            <li>6AM <span>26&deg;</span></li>
+                                                            <li>12PM <span>32&deg;</span></li>
+                                                            <li>6PM <span>28&deg;</span></li>
+                                                            <li>12AM <span>22&deg;</span></li>
+                                                        </ul>
+                                                    </div>
+                                                </div>
+                                                <div class="col-md-4">
+                                                    <div class="weather-item">
+                                                        <h6>Cuddalore</h6>
+                                                        <div class="weather-icon">
+                                                            <img src="img/weather-icon-02.png" alt="">
+                                                        </div>
+                                                        <span>28&deg;C</span>
+                                                        <ul class="time-weather">
+                                                            <li>6AM <span>20&deg;</span></li>
+                                                            <li>12PM <span>28&deg;</span></li>
+                                                            <li>6PM <span>26&deg;</span></li>
+                                                            <li>12AM <span>18&deg;</span></li>
+                                                        </ul>
+                                                    </div>
+                                                </div>
+                                                <div class="col-md-4">
+                                                    <div class="weather-item">
+                                                        <h6>Coimbatore</h6>
+                                                        <div class="weather-icon">
+                                                            <img src="img/weather-icon-01.png" alt="">
+                                                        </div>
+                                                        <span>33&deg;C</span>
+                                                        <ul class="time-weather">
+                                                            <li>6AM <span>26&deg;</span></li>
+                                                            <li>12PM <span>33&deg;</span></li>
+                                                            <li>6PM <span>29&deg;</span></li>
+                                                            <li>12AM <span>27&deg;</span></li>
+                                                        </ul>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div id="tuesday">
+                                            <div class="row">
+                                                <div class="col-md-4">
+                                                    <div class="weather-item">
+                                                        <h6>Chennai</h6>
+                                                        <div class="weather-icon">
+                                                            <img src="img/weather-icon-02.png" alt="">
+                                                        </div>
+                                                        <span>28&deg;C</span>
+                                                        <ul class="time-weather">
+                                                            <li>6AM <span>18&deg;</span></li>
+                                                            <li>12PM <span>27&deg;</span></li>
+                                                            <li>6PM <span>25&deg;</span></li>
+                                                            <li>12AM <span>17&deg;</span></li>
+                                                        </ul>
+                                                    </div>
+                                                </div>
+                                                <div class="col-md-4">
+                                                    <div class="weather-item">
+                                                        <h6>Cuddalore</h6>
+                                                        <div class="weather-icon">
+                                                            <img src="img/weather-icon-03.png" alt="">
+                                                        </div>
+                                                        <span>31&deg;C</span>
+                                                        <ul class="time-weather">
+                                                            <li>6AM <span>19&deg;</span></li>
+                                                            <li>12PM <span>28&deg;</span></li>
+                                                            <li>6PM <span>22&deg;</span></li>
+                                                            <li>12AM <span>18&deg;</span></li>
+                                                        </ul>
+                                                    </div>
+                                                </div>
+                                                <div class="col-md-4">
+                                                    <div class="weather-item">
+                                                        <h6>Coimbatore</h6>
+                                                        <div class="weather-icon">
+                                                            <img src="img/weather-icon-01.png" alt="">
+                                                        </div>
+                                                        <span>26&deg;C</span>
+                                                        <ul class="time-weather">
+                                                            <li>6AM <span>19&deg;</span></li>
+                                                            <li>12PM <span>26&deg;</span></li>
+                                                            <li>6PM <span>22&deg;</span></li>
+                                                            <li>12AM <span>20&deg;</span></li>
+                                                        </ul>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div id="wednesday">
+                                            <div class="row">
+                                                <div class="col-md-4">
+                                                    <div class="weather-item">
+                                                        <h6>Chennai</h6>
+                                                        <div class="weather-icon">
+                                                            <img src="img/weather-icon-03.png" alt="">
+                                                        </div>
+                                                        <span>31&deg;C</span>
+                                                        <ul class="time-weather">
+                                                            <li>6AM <span>19&deg;</span></li>
+                                                            <li>12PM <span>28&deg;</span></li>
+                                                            <li>6PM <span>22&deg;</span></li>
+                                                            <li>12AM <span>18&deg;</span></li>
+                                                        </ul>
+                                                    </div>
+                                                </div>
+                                                <div class="col-md-4">
+                                                    <div class="weather-item">
+                                                        <h6>Cuddalore</h6>
+                                                        <div class="weather-icon">
+                                                            <img src="img/weather-icon-01.png" alt="">
+                                                        </div>
+                                                        <span>34&deg;C</span>
+                                                        <ul class="time-weather">
+                                                            <li>6AM <span>28&deg;</span></li>
+                                                            <li>12PM <span>34&deg;</span></li>
+                                                            <li>6PM <span>30&deg;</span></li>
+                                                            <li>12AM <span>29&deg;</span></li>
+                                                        </ul>
+                                                    </div>
+                                                </div>
+                                                <div class="col-md-4">
+                                                    <div class="weather-item">
+                                                        <h6>Coimbatore</h6>
+                                                        <div class="weather-icon">
+                                                            <img src="img/weather-icon-02.png" alt="">
+                                                        </div>
+                                                        <span>28&deg;C</span>
+                                                        <ul class="time-weather">
+                                                            <li>6AM <span>18&deg;</span></li>
+                                                            <li>12PM <span>27&deg;</span></li>
+                                                            <li>6PM <span>25&deg;</span></li>
+                                                            <li>12AM <span>17&deg;</span></li>
+                                                        </ul>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div id="thursday">
+                                            <div class="row">
+                                                <div class="col-md-4">
+                                                    <div class="weather-item">
+                                                        <h6>Chennai</h6>
+                                                        <div class="weather-icon">
+                                                            <img src="img/weather-icon-01.png" alt="">
+                                                        </div>
+                                                        <span>27&deg;C</span>
+                                                        <ul class="time-weather">
+                                                            <li>6AM <span>21&deg;</span></li>
+                                                            <li>12PM <span>27&deg;</span></li>
+                                                            <li>6PM <span>22&deg;</span></li>
+                                                            <li>12AM <span>18&deg;</span></li>
+                                                        </ul>
+                                                    </div>
+                                                </div>
+                                                <div class="col-md-4">
+                                                    <div class="weather-item">
+                                                        <h6>Cuddalore</h6>
+                                                        <div class="weather-icon">
+                                                            <img src="img/weather-icon-02.png" alt="">
+                                                        </div>
+                                                        <span>28&deg;C</span>
+                                                        <ul class="time-weather">
+                                                            <li>6AM <span>18&deg;</span></li>
+                                                            <li>12PM <span>27&deg;</span></li>
+                                                            <li>6PM <span>25&deg;</span></li>
+                                                            <li>12AM <span>17&deg;</span></li>
+                                                        </ul>
+                                                    </div>
+                                                </div>
+                                                <div class="col-md-4">
+                                                    <div class="weather-item">
+                                                        <h6>Coimbatore</h6>
+                                                        <div class="weather-icon">
+                                                            <img src="img/weather-icon-03.png" alt="">
+                                                        </div>
+                                                        <span>31&deg;C</span>
+                                                        <ul class="time-weather">
+                                                            <li>6AM <span>19&deg;</span></li>
+                                                            <li>12PM <span>28&deg;</span></li>
+                                                            <li>6PM <span>22&deg;</span></li>
+                                                            <li>12AM <span>18&deg;</span></li>
+                                                        </ul>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div id="friday">
+                                            <div class="row">
+                                                <div class="col-md-4">
+                                                    <div class="weather-item">
+                                                        <h6>Chennai</h6>
+                                                        <div class="weather-icon">
+                                                            <img src="img/weather-icon-03.png" alt="">
+                                                        </div>
+                                                        <span>33&deg;C</span>
+                                                        <ul class="time-weather">
+                                                            <li>6AM <span>28&deg;</span></li>
+                                                            <li>12PM <span>33&deg;</span></li>
+                                                            <li>6PM <span>29&deg;</span></li>
+                                                            <li>12AM <span>27&deg;</span></li>
+                                                        </ul>
+                                                    </div>
+                                                </div>
+                                                <div class="col-md-4">
+                                                    <div class="weather-item">
+                                                        <h6>Cuddalore</h6>
+                                                        <div class="weather-icon">
+                                                            <img src="img/weather-icon-02.png" alt="">
+                                                        </div>
+                                                        <span>31&deg;C</span>
+                                                        <ul class="time-weather">
+                                                            <li>6AM <span>24&deg;</span></li>
+                                                            <li>12PM <span>31&deg;</span></li>
+                                                            <li>6PM <span>26&deg;</span></li>
+                                                            <li>12AM <span>23&deg;</span></li>
+                                                        </ul>
+                                                    </div>
+                                                </div>
+                                                <div class="col-md-4">
+                                                    <div class="weather-item">
+                                                        <h6>Coimbatore</h6>
+                                                        <div class="weather-icon">
+                                                            <img src="img/weather-icon-01.png" alt="">
+                                                        </div>
+                                                        <span>28&deg;C</span>
+                                                        <ul class="time-weather">
+                                                            <li>6AM <span>24&deg;</span></li>
+                                                            <li>12PM <span>28&deg;</span></li>
+                                                            <li>6PM <span>26&deg;</span></li>
+                                                            <li>12AM <span>22&deg;</span></li>
+                                                        </ul>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </section>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <section class="services">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4">
+                    <div class="service-item first-service">
+                        <div class="service-icon"></div>
+                        <h4>Our success</h4>
+                        <p>This is our first website, in this website we know all the bus timing in single click.</p>
+                        </a>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="service-item second-service">
+                        <div class="service-icon"></div>
+                        <h4>Unique Ideas</h4>
+                        <p>Everyone can see bus timings easily and correctly on single site.</p>
+                        </a>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="service-item third-service">
+                        <div class="service-icon"></div>
+                        <h4>Best Support</h4>
+                        <p>We supported 24/7 for everyone for any bus timing related Question.</p>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+ 
+
+
+    <footer>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="primary-button">
+                        <a href="#" class="scroll-top">Back To Top</a>
+                    </div>
+                </div>
+                <div class="col-md-12">
+                    <ul class="social-icons">
+                        <li><a href=""><i class="fa fa-facebook"></i></a></li>
+                        <li><a href="#"><i class="fa fa-twitter"></i></a></li>
+                        <li><a href="https://www.linkedin.com/feed/"><i class="fa fa-linkedin"></i></a></li>
+                    </ul>
+                </div>
+                <div class="col-md-12">
+                    <p>Copyright &copy; 2023 Bus Timing Find Company</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+
+    
+
+
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+    <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.11.2.min.js"><\/script>')</script>
+
+    <script src="js/vendor/bootstrap.min.js"></script>
+    
+    <script src="js/datepicker.js"></script>
+    <script src="js/plugins.js"></script>
+    <script src="js/main.js"></script>
+
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js" type="text/javascript"></script>
+    <script type="text/javascript">
+    $(document).ready(function() {
+
+        
+
+        // navigation click actions 
+        $('.scroll-link').on('click', function(event){
+            event.preventDefault();
+            var sectionID = $(this).attr("data-id");
+            scrollToID('#' + sectionID, 750);
+        });
+        // scroll to top action
+        $('.scroll-top').on('click', function(event) {
+            event.preventDefault();
+            $('html, body').animate({scrollTop:0}, 'slow');         
+        });
+        // mobile nav toggle
+        $('#nav-toggle').on('click', function (event) {
+            event.preventDefault();
+            $('#main-nav').toggleClass("open");
+        });
+    });
+    // scroll function
+    function scrollToID(id, speed){
+        var offSet = 0;
+        var targetOffset = $(id).offset().top - offSet;
+        var mainNav = $('#main-nav');
+        $('html,body').animate({scrollTop:targetOffset}, speed);
+        if (mainNav.hasClass("open")) {
+            mainNav.css("height", "1px").removeClass("in").addClass("collapse");
+            mainNav.removeClass("open");
+        }
+    }
+    if (typeof console === "undefined") {
+        console = {
+            log: function() { }
+        };
+    }
+    </script>
+</body>
+</html>
